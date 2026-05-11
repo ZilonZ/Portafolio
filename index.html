@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZilonZ | Cristian Morales — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Particle background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-bracket">[</span>
+      <span class="nav-alias">ZilonZ</span>
+      <span class="nav-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-text="SOBRE MÍ">SOBRE MÍ</a></li>
+      <li><a href="#tech" class="nav-link" data-text="TECH">TECH</a></li>
+      <li><a href="#projects" class="nav-link" data-text="PROYECTOS">PROYECTOS</a></li>
+      <li><a href="#contact" class="nav-link" data-text="CONTACTO">CONTACTO</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span class="status-text">DISPONIBLE PARA PROYECTOS</span>
+        </div>
+
+        <div class="hero-label">FULLSTACK DEVELOPER</div>
+
+        <h1 class="hero-name">
+          <span class="name-line">Cristian</span>
+          <span class="name-line accent">Morales</span>
+        </h1>
+
+        <div class="hero-alias">
+          <span class="alias-prefix">&gt;_</span>
+          <span class="alias-text">ZilonZ</span>
+          <span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-tagline">
+          Construyo interfaces que no se olvidan<br/>
+          y sistemas que no fallan.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <span class="btn-corner tl"></span>
+            <span class="btn-corner tr"></span>
+            <span class="btn-corner bl"></span>
+            <span class="btn-corner br"></span>
+            VER PROYECTOS
+          </a>
+          <a href="#contact" class="btn-ghost">CONTACTO</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-container">
+            <img src="Foto_CV_Relax.jpeg" alt="Cristian Morales" class="avatar-real" id="avatar-real" />
+            <img src="Avatar_ZilonZ.png" alt="ZilonZ Avatar" class="avatar-gamer" id="avatar-gamer" />
+          </div>
+          <div class="avatar-hud">
+            <span class="hud-line">ID: ZILONZ_DEV</span>
+            <span class="hud-line">LOC: Villavicencio, CO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Desarrollador web fullstack con enfoque en <span class="highlight">React</span> y <span class="highlight">JavaScript</span>, apasionado por crear experiencias digitales que mezclan 
+            <span class="highlight">funcionalidad robusta</span> con <span class="highlight">diseño excepcional</span>.
+          </p>
+          <p class="about-body">
+            Estudiante de Ingeniería de Sistemas en 8.º semestre en la Corporación Universitaria del Meta (UNIMETA). Me especializo en aplicaciones web modernas, sistemas administrativos y automatización de procesos. 
+            Tengo un ojo afinado para el <span class="highlight">UX/UI</span>, asegurando que cada producto no solo funcione perfectamente, sino que también sea intuitivo y visualmente memorable.
+          </p>
+          <p class="about-body">
+            Project Manager de <span class="highlight">Kore-Code</span>, donde desarrollo soluciones digitales personalizadas para emprendedores y empresas, con énfasis en comunicación cercana y soporte continuo.
+          </p>
+
+          <div class="about-badges">
+            <div class="badge">🏆 Ganador Retos de Transformación Digital 2025 — Gobernación del Meta</div>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">8°</span>
+            <span class="stat-label">Semestre Ing. Sistemas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Años desarrollando</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">ES</span>
+            <span class="stat-label">Nativo</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">EN</span>
+            <span class="stat-label">Intermedio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section class="section section-dark" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="tech-categories">
+
+        <div class="tech-category">
+          <div class="tech-cat-header">
+            <span class="tech-cat-icon">⬡</span>
+            <h3 class="tech-cat-title">Frontend</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill pill-primary">React</span>
+            <span class="tech-pill pill-primary">TypeScript</span>
+            <span class="tech-pill pill-primary">Next.js</span>
+            <span class="tech-pill pill-primary">JavaScript</span>
+            <span class="tech-pill pill-primary">Tailwind CSS</span>
+            <span class="tech-pill pill-primary">Responsive Design</span>
+            <span class="tech-pill pill-primary">UX / UI</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="tech-cat-header">
+            <span class="tech-cat-icon">⬡</span>
+            <h3 class="tech-cat-title">Backend</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill pill-secondary">Node.js</span>
+            <span class="tech-pill pill-secondary">Express</span>
+            <span class="tech-pill pill-secondary">PHP</span>
+            <span class="tech-pill pill-secondary">Python</span>
+            <span class="tech-pill pill-secondary">APIs REST</span>
+            <span class="tech-pill pill-secondary">JWT Auth</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="tech-cat-header">
+            <span class="tech-cat-icon">⬡</span>
+            <h3 class="tech-cat-title">Bases de Datos & DevOps</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill pill-tertiary">MySQL</span>
+            <span class="tech-pill pill-tertiary">PostgreSQL</span>
+            <span class="tech-pill pill-tertiary">Docker</span>
+            <span class="tech-pill pill-tertiary">Git & GitHub</span>
+            <span class="tech-pill pill-tertiary">Vite</span>
+            <span class="tech-pill pill-tertiary">Deploy</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="specialties">
+        <h3 class="specialties-title">¿En qué me especializo?</h3>
+        <div class="specialty-grid">
+          <div class="specialty-card">
+            <div class="specialty-icon">◈</div>
+            <h4>Apps Web Modernas</h4>
+            <p>Desarrollo SPAs y aplicaciones web con React, TypeScript y Next.js, priorizando rendimiento, escalabilidad y buenas prácticas.</p>
+          </div>
+          <div class="specialty-card">
+            <div class="specialty-icon">◈</div>
+            <h4>Sistemas Administrativos</h4>
+            <p>Diseño e implemento sistemas de gestión complejos: control de inventarios, contratos, mantenimientos y trazabilidad operativa.</p>
+          </div>
+          <div class="specialty-card">
+            <div class="specialty-icon">◈</div>
+            <h4>UX/UI de Alto Impacto</h4>
+            <p>Creo interfaces que no solo funcionan —se sienten bien. Diseño orientado al usuario, con atención al detalle visual y a la experiencia real de uso.</p>
+          </div>
+          <div class="specialty-card">
+            <div class="specialty-icon">◈</div>
+            <h4>Automatización de Procesos</h4>
+            <p>Identifico flujos manuales y los convierto en soluciones digitales: alertas automáticas, integración de APIs y pipelines eficientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Proyectos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- GEMA -->
+        <article class="project-card" id="card-gema">
+          <div class="project-card-inner">
+            <div class="project-preview">
+              <img src="1778534735306_image.png" alt="GEMA - Sistema Web" class="project-img" />
+              <div class="project-preview-overlay">
+                <a href="https://www.gema-co.site/" target="_blank" rel="noopener" class="preview-link">
+                  VER SITIO <span>↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-type">SISTEMA WEB</div>
+              <h3 class="project-title">GEMA</h3>
+              <p class="project-full-name">Gestor Especializado en Maquinaria Amarilla</p>
+              <p class="project-desc">
+                Solución digital empresarial para la gestión de contratos y maquinaria. Permite controlar el uso de equipos, registrar evidencias y llevar trazabilidad de operaciones y mantenimientos mediante alertas automatizadas.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">Docker</span>
+                <span class="stack-tag">JWT</span>
+              </div>
+              <a href="https://www.gema-co.site/" target="_blank" rel="noopener" class="project-link">
+                <span>IR AL SITIO</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KORE-CODE -->
+        <article class="project-card" id="card-korecode">
+          <div class="project-card-inner">
+            <div class="project-preview project-preview-kore">
+              <div class="kore-mockup">
+                <div class="kore-header">
+                  <span class="kore-dot"></span><span class="kore-dot"></span><span class="kore-dot"></span>
+                  <span class="kore-url">kore-code.dev</span>
+                </div>
+                <div class="kore-content">
+                  <div class="kore-logo-mock">⬡ KORE-CODE</div>
+                  <div class="kore-lines">
+                    <div class="kore-line w-80"></div>
+                    <div class="kore-line w-60"></div>
+                    <div class="kore-line w-70"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-preview-overlay">
+                <a href="https://landingpage-kore-code.vercel.app/" target="_blank" rel="noopener" class="preview-link">
+                  VER SITIO <span>↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-type">PORTAFOLIO EMPRESARIAL</div>
+              <h3 class="project-title">Kore-Code</h3>
+              <p class="project-full-name">Agencia de Desarrollo Web & Soluciones Digitales</p>
+              <p class="project-desc">
+                Sitio web empresarial para presentar servicios de desarrollo web, automatización y soluciones digitales. Diseño moderno, responsivo y profesional con navegación SPA y sistema de contacto funcional.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Vite</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Nodemailer</span>
+              </div>
+              <a href="https://landingpage-kore-code.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                <span>IR AL SITIO</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Contacto</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-text">
+          <p class="contact-lead">¿Tienes un proyecto en mente?</p>
+          <p class="contact-body">Disponible para freelance, colaboraciones y nuevas oportunidades. Hablemos y construyamos algo grande.</p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:zilonoy19@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span class="contact-label">zilonoy19@gmail.com</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://wa.me/573114014791" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span class="contact-label">+57 311 4014 791</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">⌥</span>
+            <span class="contact-label">GitHub — ZilonZ</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">◎</span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">&copy; 2025 Cristian Morales — ZilonZ</span>
+      <span class="footer-made">Diseñado & Desarrollado con 💙</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
